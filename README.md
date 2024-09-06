@@ -1,27 +1,39 @@
-# package_name
+# CPF
 
-Description. 
-The package package_name is used to:
-	- 
-	-
+This Python module provides tools for validating and formatting CPF numbers.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+To install, you can use pip:
 
 ```bash
-pip install package_name
+pip install cpf
 ```
 
 ## Usage
 
+### Validation
+
 ```python
-from package_name import file1_name
-file1_name.my_function()
+from cpf import validate_cpf
+
+cpf = "123.456.789-09"
+if validate_cpf(cpf):
+    print("Valid CPF!")
+else:
+    print("Invalid CPF.")
 ```
 
-## Author
-My_name
+### Formatting
+
+```python
+from cpf import format_cpf
+
+cpf = "12345678909"
+formatted_cpf = format_cpf(cpf)
+print(formatted_cpf)  # Output: 123.456.789-09
+```
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)
