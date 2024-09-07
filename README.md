@@ -1,4 +1,4 @@
-# CPF
+# CPFPY
 
 This Python module provides tools for validating and formatting CPF numbers.
 
@@ -7,7 +7,7 @@ This Python module provides tools for validating and formatting CPF numbers.
 To install, you can use pip:
 
 ```bash
-pip install cpf
+pip install cpfpy
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ pip install cpf
 ### Validation
 
 ```python
-from cpf import validate_cpf
+from cpfpy import validate_cpf
 
 cpf = "123.456.789-09"
 if validate_cpf(cpf):
@@ -27,7 +27,7 @@ else:
 ### Formatting
 
 ```python
-from cpf import format_cpf
+from cpfpy import format_cpf
 
 cpf = "12345678909"
 formatted_cpf = format_cpf(cpf)

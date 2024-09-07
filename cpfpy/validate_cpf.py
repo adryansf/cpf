@@ -1,4 +1,4 @@
-from cpf.utils.digits import get_check_digits, convert_to_digits, is_repeated, remove_non_digits
+from cpfpy.utils.digits import get_check_digits, convert_to_digits, is_repeated, remove_non_digits
 
 def validate_cpf(cpf_number: str) -> bool:
     """Validate a CPF number."""
